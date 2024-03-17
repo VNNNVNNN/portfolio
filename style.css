@@ -1,6 +1,7 @@
 :root {
   color-scheme: light dark;
-  .color-scheme { position: absolute; /* Position the switcher absolutely */
+  .color-scheme {
+    position: absolute; /* Position the switcher absolutely */
     top: 1rem; /* Offset from the top */
     right: 1rem; /* Offset from the right */
     font-size: 70%; /* Make the font size smaller */
