@@ -6,44 +6,29 @@
     <title>Contact</title>
     <link rel = "stylesheet" href="style.css">
 </head>
-<!-- <style>
-  .container {
-    display: grid; /* Define grid container */
-    grid-template-columns: 1fr 1fr 1fr; /* Define three columns with equal width */
-    grid-gap: 10px; /* Add gap between grid items */
-  }
-
-  .item {
-    display: contents;
-    background-color: #f0f0f0; /* Background color for grid items */
-    padding: 20px; /* Add padding to grid items */
-    text-align: center; /* Center align text */
-  }
-</style> -->
-<nav>
+<!-- <nav>
     <a href="index.html"target="_blank">Home</a>
-    <a class='current' href="contact_index.html"target="_blank">Contact</a>
+    <a href="contact_index.html"target="_blank">Contact</a>
     <a href="projects_index.html"target="_blank">Projects</a>
     <a href="resume.html"target="blank">Resume</a>
-</nav>
+</nav> -->
 <body>
     <h1>Contact me!</h1>
-</body>
-<form action="mailto:vnchen@mit.edu" method="post" enctype="text/plain">
-    <div>
-      <label for="email">Enter your email: </label>
-      <input type="email" name="email" />
-    </div>
-    <div>
-      <label for="subject">Enter your subject: </label>
-      <input name="subject"/>
-    </div>
-    <div>
-        <label for="email_content">Enter your message: </label>
-        <textarea name="body"></textarea>
-    </div>
-    <div>
+    <form action="mailto:vnchen@mit.edu" method="post" enctype="text/plain">
+        <div class="form-example">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-example">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-example">
+          <label for="email_content">Enter your message: </label>
+          <textarea name="body"></textarea>
+        </div>
         <button name="button">Submit</button>
-    </div>
-  </form>
+    </form>
+    <script type="module" src="/portfolio/global.js"></script>
+</body>
 </html>
